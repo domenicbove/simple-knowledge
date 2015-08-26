@@ -5,7 +5,7 @@
 	<groupId>com.redhat</groupId>
 	<artifactId>dbove-simple-knowledge</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>kjar</packaging>
 
 	<name>simple-knowledge</name>
 
@@ -14,6 +14,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-maven-plugin</artifactId>
+				<version>6.0.2-redhat-6</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<distributionManagement>
 		<repository>
